@@ -8,11 +8,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+    <!-- 메인 컨테이너 -->
     <div class ="container">
+        <!-- 캘린더 메뉴 -->
         <div class ="calender">
-            <div class ="prev"></div>
-            <div class = "month"></div>
-            <div class = "next"></div>
+            <!-- 월, 월변경 버튼 -->
+            <div class = "month_bt">
+                <div class ="prev"></div>
+                <div class = "month"></div>
+                <div class = "next"></div>
+            </div>
+            <!-- 달력 메인 -->
             <div class = "c - table">
                 <table class = "cal">
                     <tr>
@@ -81,17 +87,19 @@
                 </table>
             </div>
         </div>
-
+        <!-- 할일 목록 -->
         <div class = "todo">
+            <!-- 할일 라벨 표시 -->
             <div class = "todo_main">
                 <div class = "work_list"></div>
                 <div class = "work_add"></div>
                 <div class = "work_del"></div>
             </div>
-
+            <!-- 라벨 클릭시 디테일 태그 -->
             <div class = "todo_detail">
 
             </div>
+            <!-- 라벨 생성 태그 -->
             <div class = "todo_add_sc">
 
             </div>
