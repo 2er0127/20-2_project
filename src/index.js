@@ -33,12 +33,14 @@ function load_calender(get_day) {
     document.getElementsByClassName("month")[0].innerHTML = get_day.getMonth() + 1 + "월";
     let count = 1;
     let No = document.getElementsByClassName("No");
+    let last_date = new Date(get_day.getFullYear(), get_day.getMonth()-1, 1);
 
     for (let i = 0; i < 6; i++) {
         for (let j = 0; j < 7; j++) {
 
             if ((i === 0) && (j < get_day.getDay())) {
-                No[i * 7 + j].innerHTML = " ";
+                No[i*7 + j].innerHTML = month_Check()[last_date.getMonth()] + j+1 - get_day.getDay();
+                No[i*7 + j].style.opacity = 0.5;
             } else {
                 No[i * 7 + j].innerHTML = count++;
             }
@@ -48,10 +50,6 @@ function load_calender(get_day) {
                 No[i*7 + j].style.opacity = 0.5;
 
             }
-
-            // if (count - 1 > month_Check()[get_day.getMonth()]) {
-            //     No[i * 7 + j].innerHTML = " ";
-            // }
         }
     }
 }
