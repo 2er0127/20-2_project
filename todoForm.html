@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ToDo_Form</title>
+    <script>
+        function todoForm(){
+            var todo=document.getElementById('text').value;
+            document.getElementById("round_button").innerText=content;
+        }
+    </script>
+</head>
+<body>
+    <h1>할 일 추가</h1>
+    <form action="index.html" method="GET" onsubmit="todoForm();">
+        <p>제목 : <input type="text" id="text" name="content" placeholder="Content" required></p>
+        <p><input type="submit" value="전송" onclick="location.href='index.html'"></p>
+    </form>
+</body>
+</html>
