@@ -5,14 +5,23 @@
 /* .No{
   color : s;
 } */
+.container{
+background-color:gray;
+}
 .calender{
   top:50px;
   text-align: center;
-  width: 700px;
+  width:49%;
   height:700px;
+  float:left;
   border-radius:40px;
   background-color:rgb(255, 204,153);
   font-size: 20px;
+}
+.month_bt{
+border-top-left-radius: 30px; 30px;
+border-top-right-radius: 30px 30px;
+background-color: yellow;
 }
 table,th,td{
   border-bottom-width:7px;
@@ -32,22 +41,18 @@ table{
   text-align: center;
 }
 .prev{
+  visibility: inherit;
   text-align: left;
-  position: relative;
-  top:47px;
-  left:230px;
 }
 .month{
+  margin:0px;
   text-align: center;
-  font-size:50px;
   position:relative;
-  top:-10px;
+  font-size:50px;
 }
 .next{
+  visibility: inherit;
   text-align: right;
-  position:relative;
-  top:-45px;
-  left:-230px;
 }
 .day{
   text-align: center;
@@ -57,7 +62,10 @@ table{
   text-align: center;
 }
 .todo{
-  margin-left:1100px;
-  margin-top:-700px;
-  font-size:30px;
+  border-radius:40px;
+  background-color: bisque;
+  float:right;
+  width:49%;
+  height:700px;
+
 }
