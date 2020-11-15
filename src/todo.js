@@ -3,13 +3,10 @@ document.getElementById('todo_add').addEventListener('click', add);
 document.getElementById('todo_del').addEventListener('click', del);
 document.getElementById('todo_delAll').addEventListener('click',delAll);
 
-/*function add(){
-    var contents=document.querySelector('.round_button');
-    if(!contents.value){
-        alert('내용을 입력해주세요.');
-        contents.focus();
-        return false;
-    }*/
+//function add(){
+    //const name=document.getElementById('text').value;
+    //document.getElementById("round_button").innerText=name;
+    //}
     /*var tr = document.createElement('tr');
     var input = document.createElement('input');
     input.setAttribute('type', 'checkbox');
@@ -25,9 +22,9 @@ document.getElementById('todo_delAll').addEventListener('click',delAll);
     
     document.getElementById('listBody').appendChild(tr);
     contents.value='';
-    contents.focus();*/
+    contents.focus();
 
-}
+}*/
 
 function del(){
     
