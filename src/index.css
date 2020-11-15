@@ -2,3 +2,62 @@
   color : s;
 } */
 /* 김민우 바보자식아~ */
+/* .No{
+  color : s;
+} */
+.calender{
+  top:50px;
+  text-align: center;
+  width: 700px;
+  height:700px;
+  border-radius:40px;
+  background-color:rgb(255, 204,153);
+  font-size: 20px;
+}
+table,th,td{
+  border-bottom-width:7px;
+  border-collapse: collapse;
+  border: 2px solid white;
+  padding: 5px 5px 5px 5px;
+}
+table{
+  border-collapse:collapse;
+  font-family:"맑은 고딕";
+  font-size:30px;
+  font-weight: bold;
+  width:80%;
+  height:100px;
+  margin-left:65px;
+  margin-top:20px;
+  text-align: center;
+}
+.prev{
+  text-align: left;
+  position: relative;
+  top:47px;
+  left:230px;
+}
+.month{
+  text-align: center;
+  font-size:50px;
+  position:relative;
+  top:-10px;
+}
+.next{
+  text-align: right;
+  position:relative;
+  top:-45px;
+  left:-230px;
+}
+.day{
+  text-align: center;
+  
+}
+.no{
+  text-align: center;
+}
+.todo{
+  margin-left:1100px;
+  margin-top:-700px;
+  font-size:30px;
+}
