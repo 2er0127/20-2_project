@@ -57,7 +57,7 @@ function cal() {
 // 캘린더 불러오기
 function load_calender(get_day, next_month, prev_month) {
     document.getElementsByClassName("year")[0].innerHTML = get_day.getFullYear() + "년";
-    document.getElementsByClassName("month")[0].innerHTML = get_day.getMonth() + 1 + "월";
+    document.getElementsByClassName("month")[0].innerHTML = (get_day.getMonth() + 1)>9 ? (get_day.getMonth() + 1) + "월" : "0" + (get_day.getMonth() + 1) + "월";
     let No = document.getElementsByClassName("No");
     let count = 0;
 
