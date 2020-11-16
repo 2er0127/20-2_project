@@ -121,14 +121,14 @@
             
             <!-- 라벨 생성 태그 -->
             <div class = "todo_add_sc">
-                <Button onclick="addForm()">추가</Button>
+                <Button onclick="form()">추가</Button>
                 <button type="button" id="todo_del">선택 삭제</button>
                 <button type="button" id="todo_delAll">전체 삭제</button>
             </div>
             
             <!-- 할일 추가-->
-            <div class="addForm">
-                <form id="addDiv">
+            <div id="addForm" style="display:none;">
+                <form name="add" method="POST">
                     <p>제목 : <input type="text" id="name"></p>
                     <p><input type="button" value="추가" onclick="hideForm()"></p>
                     

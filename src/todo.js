@@ -1,14 +1,21 @@
 
-function addForm(){
-    ${"#addDiv"}.css{"display", "block"};
+//function Form(){
+//    ${"#addDiv"}.css{"display", "block"};
+//}
+
+//document.getElementById(addDiv).style.display="";
+
+//function hideForm(){
+//    ${"#addDiv"}.css{"display", "none"};
+//}
+
+function form(){
+    var f=document.form;
+    if(f.type[0].checked==true){
+        document.all.addForm.style.display="none";
+    }else{
+        document.all.addForm.style.display="";
+    }
 }
-
-document.getElementById(addDiv).style.display="none";
-
-function hideForm(){
-    ${"#addDiv"}.css{"display", "none"};
-}
-
-
 
 
