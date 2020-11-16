@@ -105,8 +105,8 @@
             <!-- 할일 라벨 표시 -->
             <div class = "todo_main">
                 <div class = "work_list"><!-- css로 동그라미 -->
-                    <button id="round_button"></button>
-                    <button id="round_button"></button>
+                    <button class="round_button"></button>
+                    <button class="round_button"></button>
                 </div>
             </div>
             
@@ -123,6 +123,13 @@
                 <button type="button" id="todo_delAll">전체 삭제</button>
             </div>
             
+            <!-- 할일 추가-->
+            <div class="add">
+                <form method="POST">
+                    <p>제목 : <input type="text" name="content"></p>
+                    <p><input type="submit" value="추가" onclick="location.href='index.html'"></p>
+                </form>
+            </div>
             
         </div>
     </div>
