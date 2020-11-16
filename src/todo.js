@@ -1,8 +1,13 @@
 
-function formsrc(){
-    var add=document.getElementsByClassName("content");
-    var text=tags[0].innerHTML;
-    
-    document.getElementById("round_button").innerHTML=text;
+
+function addForm(){
+    ${"#addDiv"}.css{"display", "block"};
 }
+
+function hideForm(){
+    ${"#addDiv"}.css{"display", "none"};
+}
+
+
+
 
