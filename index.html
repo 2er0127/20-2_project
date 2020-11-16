@@ -104,9 +104,12 @@
             
             <!-- 할일 라벨 표시 -->
             <div class = "todo_main">
-                <div class = "work_list"><!-- css로 동그라미 -->
+                
+                <!-- 할일 리스트 -->
+                <div class = "work_list">
+                    <!-- css로 동그라미 만들어주세여 -->
                     <button class="round_button"></button>
-                    <button class="round_button"></button>
+                    <p id="round_button"></p>
                 </div>
             </div>
             
@@ -124,10 +127,10 @@
             </div>
             
             <!-- 할일 추가-->
-            <div class="add">
-                <form method="POST">
+            <div class="addForm">
+                <form method="GET">
                     <p>제목 : <input type="text" name="content"></p>
-                    <p><input type="submit" value="추가" onclick="location.href='index.html'"></p>
+                    <p><input type="submit" value="추가" onclick="formsrc()"></p>
                 </form>
             </div>
             
