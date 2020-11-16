@@ -9,29 +9,33 @@
 background-color:gray;
 }
 .calender{
+  border-bottom-left-radius: 35px; 35px;
+  border-bottom-right-radius: 35px 35px;
+  border-top-left-radius: 35px; 35px;
+  border-top-right-radius: 35px 35px;
   top:50px;
   text-align: center;
   width:49%;
   height:700px;
   float:left;
-  border-radius:40px;
-  background-color:rgb(255, 204,153);
+  border:5px solid black;
+  background-color:white);
   font-size: 20px;
 }
 .month_bt{
-border-top-left-radius: 30px; 30px;
+border-top-left-radius: 30px 30px;
 border-top-right-radius: 30px 30px;
-background-color: yellow;
+background-color:#282828;
 }
 table,th,td{
   border-bottom-width:7px;
   border-collapse: collapse;
   border: 2px solid white;
   padding: 5px 5px 5px 5px;
+  border: #000000 solid; border-width: 0px 0px 0px 0px;
 }
 table{
   border-collapse:collapse;
-  font-family:"맑은 고딕";
   font-size:30px;
   font-weight: bold;
   width:80%;
@@ -39,18 +43,25 @@ table{
   margin-left:65px;
   margin-top:20px;
   text-align: center;
+  border: #000000 solid; border-width: 0px 0px 0px 0px
+}
+.year{
+  color:white;
 }
 .prev{
+  color:white;
   visibility: inherit;
   text-align: left;
 }
 .month{
+  color:white;
   margin:0px;
   text-align: center;
   position:relative;
   font-size:50px;
 }
-.next{
+.next{ 
+  color:white;
   visibility: inherit;
   text-align: right;
 }
@@ -62,10 +73,33 @@ table{
   text-align: center;
 }
 .todo{
-  border-radius:40px;
-  background-color: bisque;
+  border-bottom-left-radius: 35px; 35px;
+  border-bottom-right-radius: 35px 35px;
+  border-top-left-radius: 35px; 35px;
+  border-top-right-radius: 35px 35px;
+  text-align: center;
+  border:5px solid black;
+  background-color:white;
   float:right;
   width:49%;
   height:700px;
+  font-size: 50px;
+}
+.todo_main{
+background-color:#282828;
+color:white;
+font-size: 30px;
+text-align:right;
+padding:5px 5px 5px 5px;
+border:1px solid black;
+}
+.todo_modi{
+border:1px solid red;
+}
+.todo_add_sc{
+position: relative;
+bottom:-500px;
+}
+.work_list{
 
 }
