@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="src/index.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("div[class='todo_add']").click(function(){
+                $("div[id='addForm']").fadeIn(0);
+            });
+        });
 
+
+    </script>
 </head>
 <body>
     <!-- 메인 컨테이너 -->
@@ -109,7 +118,6 @@
                 <div class = "work_list">
                     <!-- css로 동그라미 만들어주세여 -->
                     <button class="round_button"></button>
-                    <p id="round_button"></p>
                 </div>
             </div>
             
@@ -121,16 +129,19 @@
             
             <!-- 라벨 생성 태그 -->
             <div class = "todo_add_sc">
-                <Button onclick="form()">추가</Button>
+                
+                <button class="todo_add">추가</button>
+                
+                
                 <button type="button" id="todo_del">선택 삭제</button>
                 <button type="button" id="todo_delAll">전체 삭제</button>
             </div>
             
-            <!-- 할일 추가-->
+            <!-- 할일 추가--> <!-- form 팝업창으로 띄워주세요-->
             <div id="addForm" style="display:none;">
-                <form name="add" method="POST">
+                <form method="POST" class="form" action="#round_button">
                     <p>제목 : <input type="text" id="name"></p>
-                    <p><input type="button" value="추가" onclick="hideForm()"></p>
+                    <p><input type="submit" value="추가"></p>
                     
                 </form>
             </div>
